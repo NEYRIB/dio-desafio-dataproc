@@ -34,8 +34,18 @@ O desafio consiste em efetuar um processamento de dados utilizando o produto Dat
 
 ### Considerações Finais
 
-NOTA: Se o Job mostrar um WARN de Interrupt, basta ignorar. Existe um bug no Hadoop que é conhecido. Isso não impacta no processamento.
+git clone https://github.com/marcelomarques05/dio-desafio-dataproc.git
+cd dio-desafio-dataproc/
+ls -la
+gsutil ls
+vim contador.py
+desafio-dataproc-ney
+desafio-dataproc-ney
+gsutil op contador.py livro.txt gs://desafio-dataproc-ney
 
-Qualquer outra dúvida, informação ou sugestão, fique a vontade para entrar em contato.
 
-marcelo@smarques.com
+job-desafio
+pyspark
+gs://desafio-dataproc-ney/contador.py
+
+gcloud dataproc jobs wait job-desafio --project desafio-dataproc-ney --region us-central1
